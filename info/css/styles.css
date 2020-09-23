@@ -1,0 +1,197 @@
+.main-area{
+  padding: 7px 7px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.main-area .team-name {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 14px;
+    background-color: #f5f5f5;
+    padding: 5px 0 0 20px;
+}
+.team-logo {
+  display: inline-block;
+}
+.team-logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+}
+.team-info-ttl {
+  display: inline-block;
+}
+.main-area .team-name .small {
+    font-size: 12px;
+    display: block;
+    padding: 10px 0 7px 10px;
+}
+.main-area .team-name .large {
+    font-size: 20px;
+    display: block;
+    padding: 0 0 10px 10px;
+    font-weight: 500;
+}
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.tab-menu{
+  width: 25%;
+  text-align: center;
+  padding: 8px;
+  color:#000;
+  border-radius:3px;
+  background-color: #d5d5d5;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 1px;
+}
+.tab-menu:hover {
+  background-color: #222327;
+  color: #ccc;
+}
+.tab-menu.is-active{
+  background-color: #222327;
+  color: #ccc;
+}
+.content-box{
+  display: none;
+  height: 60vh;
+  background-color: #fff;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*flex-direction: column;*/
+  margin-top: 30px;
+}
+.content-box.is-active{
+  display: block;
+}
+.content{
+  font-size: 13px;
+}
+
+.content h2 {
+    background: #222327;
+    color: #ccc;
+    width: 100%;
+    padding: 7px 0 7px 7px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+/*チーム一覧ボタン*/
+/*------------------------*/
+
+.team-list-btn {
+  display: block;
+  background-color: #222327;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.team-list-btn:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.team-list-btn .go-back,
+.team-list-btn .go-back-icon {
+  display: inline-block;
+  color: #ccc;
+  
+}
+
+
+
+
+
+/*table*/
+/*最新情報（status-info）*/
+/*------------------------*/
+
+.content .status-info{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.content .status-info tr {
+    border-bottom: 1px solid #ccc;
+}
+.content .status-info tr a {
+    cursor: pointer;
+}
+
+
+.content .status-info th,
+.content .status-info td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.content .status-info tr:first-child {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+}
+
+/*プロフィール*/
+/*-----------------------*/
+
+
+.content .profile-info {
+  width: 100%;
+}
+
+.content .profile-info th {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.profile-info tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-info tr:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.profile-info th {
+  width: 25%;
+}
+
+.profile-info td {
+  padding: 10px 0 10px 20px;
+}
+.profile-info td span {
+  display: block;
+}
+
+/*成績・データ*/
+/*----------------------*/
+
+.data-info {
+  width: 100%;
+}
+
+.data-info tr{
+  border-bottom: 1px solid #ccc;
+}
+.data-info tr:first-child {
+  border-top: 1px solid #ccc;
+}
+.data-info th {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px 0;
+}
+.data-info td {
+  text-align: center;
+  padding: 10px 0;
+}

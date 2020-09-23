@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js" integrity="sha512-BmoWLYENsSaAfQfHszJM7cLiy9Ml4I0n1YtBQKfx8PaYpZ3SoTXfj3YiDNn0GAdveOCNbK8WqQQYaSb0CMjTHQ==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" integrity="sha512-c7jR/kCnu09ZrAKsWXsI/x9HCO9kkpHw4Ftqhofqs+I2hNxalK5RGwo/IAhW3iqCHIw55wBSSCFlm8JP0sw2Zw==" crossorigin="anonymous" /> 
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <title>American Football Data Site</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <header id="header">
+                <div class="header-inner">
+                    <div class="logo-img">
+                        <a href="#">
+                            <img class="pc" src="./img/KCFDA-icon.png">
+                            <img class="sp" src="./img/KCFDA-icon.png">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="slide-menu sp">
+                            <div class="slide-menu-btn">
+                                <a href="#" class="slide-trigger">
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide-menu-contents">
+                            <ul class="menu-list">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="./column/index.html">コラム</a>
+                                </li>                                  
+                                <li>
+                                    <a href="#">日程・結果</a>
+                                </li>
+                                <li>
+                                    <a href="#">順位表</a>
+                                </li>
+                                <li>
+                                    <a href="#">データ</a>
+                                </li>  
+                            </ul>
+                        </div>
+                        <ul class="header-nav-pc pc">
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">日程・結果</a>
+                            </li>
+                            <li>
+                                <a href="#">順位表</a>
+                            </li>
+                            <li>
+                                <a href="#">データ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="main-content">
+                <!--<div class="ranking-table">-->
+                <!--    <div class="rank-ttl">-->
+                <!--        <span class="jpn">順位表</span>-->
+                <!--        <span class="eng">ranking table</span>-->
+                <!--    </div>-->
+                <!--    <div class="rank-content">-->
+                <!--        <ul class="rank">-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">1</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/waseda-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/waseda/index.html">早稲田大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">2</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/hosei-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/hosei/index.html">法政大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">3</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/chuo-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/chuo/index.html">中央大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">4</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/meiji-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/meiji/index.html">明治大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">5</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/rikkyo-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/rikkyo/index.html">立教大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">6</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/tokyo-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/tokyo/index.html">東京大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">7</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/obirin-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/obirin/index.html">桜美林大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--            <li>-->
+                <!--                <div class="rank-container">-->
+                <!--                    <div class="num">8</div>-->
+                <!--                    <div class="enb">-->
+                <!--                        <a href="#">-->
+                <!--                            <img src="./img/nippon-icon.png" alt="" class="team-icon">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <div class="name">-->
+                <!--                        <a href="./info/nippon/index.html">日本大学</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </li>-->
+                <!--        </ul>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--ranking-table-->
+                
+                
+                
+                
+                <div class="ranking-table">
+                    <!--<div class="rank-ttl">-->
+                    <!--    <span class="jpn">順位表</span>-->
+                    <!--    <span class="eng">ranking table</span>-->
+                    <!--</div>-->
+                    
+                    <div class="win-content">
+                        <div class="win-content-ttl">チーム勝敗数</div>
+                        
+                        <div class="team-div">TOP8</div>
+                        <table class="rank-info">
+                            
+                            <tr>
+                                <th>チーム</th><th>試合</th><th>勝</th><th>負</th><th>勝率</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/waseda-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/waseda/index.html">早稲田大学</a>
+                                    </div> 
+                                </td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>1.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/hosei-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/hosei/index.html">法政大学</a>
+                                    </div> 
+                                </td>
+                                <td>7</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>.857</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/chuo-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/chuo/index.html">中央大学</a>
+                                    </div> 
+                                </td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>1.00</td>
+                            </tr>                            
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/meiji-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/meiji/index.html">明治大学</a>
+                                    </div> 
+                                </td>
+                                <td>7</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>.571</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/rikkyo-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/rikkyo/index.html">立教大学</a>
+                                    </div> 
+                                </td>
+                                <td>7</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>.428</td>
+                            </tr>    
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/tokyo-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/tokyo/index.html">東京大学</a>
+                                    </div> 
+                                </td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>.500</td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <div class="enb">
+                                        <a href="#">
+                                            <img src="./img/obirin-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/obirin/index.html">桜美林大学</a>
+                                    </div> 
+                                </td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>.714</td>
+                            </tr>    
+                            <tr>
+                                <td>
+                                    <div class="enb ">
+                                        <a href="#">
+                                            <img src="./img/nippon-icon.png" alt="" class="team-icon">
+                                        </a>
+                                    </div>
+                                    <div class="name">
+                                        <a href="./info/nippon/index.html">日本大学</a>
+                                    </div> 
+                                </td>
+                                <td>7</td>
+                                <td>7</td>
+                                <td>0</td>
+                                <td>1.00</td>
+                            </tr>                            
+                        </table>                        
+                    </div>
+                </div>    
+ 
+ 
+                <!--team-result -->
+                <div class="team-result">
+                    <div class="content-ttl">チーム成績</div>
+                        
+                    <div class="team-div">TOP8</div>
+                    <div class="go-team-result">
+                        <div class="result-left">
+                            <a href="#">
+                                <span class="text">オフェンス成績</span>
+                                <span class="go-logo">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                         <div class="result-right">
+                             <a href="#">
+                                <span class="text">ディフェンス成績</span>
+                                <span class="go-logo">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                </span>
+                            </a>                             
+                        </div>
+                    </div>
+                    <table class="result-ana">
+                        
+                        <tr>
+                            <th>チーム</th><th>パス成功率</th><th>パス回数</th><th>ラン回数</th><th>Zone</th><th>M/M</th><th>DL Move</th><th>Blitz</th>
+                        </tr>
+                        <tr>
+                            <td>早稲田</td><td>.678</td><td>40</td><td>100</td><td>50</td><td>40</td><td>40</td><td>10</td>
+                        </tr>
+                        <tr>
+                            <td>法政</td><td>.554</td><td>90</td><td>50</td><td>50</td><td>40</td><td>40</td><td>30</td>
+                        </tr> 
+                        <tr>
+                            <td>中央</td><td>.439</td><td>70</td><td>70</td><td>50</td><td>40</td><td>40</td><td>10</td>
+                        </tr>  
+                        <tr>
+                            <td>明治</td><td>.731</td><td>110</td><td>30</td><td>50</td><td>40</td><td>40</td><td>30</td>
+                        </tr>
+                        <tr>
+                            <td>立教</td><td>.433</td><td>100</td><td>40</td><td>50</td><td>40</td><td>40</td><td>50</td>
+                        </tr> 
+                        <tr>
+                            <td>東京</td><td>.667</td><td>10</td><td>200</td><td>50</td><td>40</td><td>40</td><td>5</td>
+                        </tr>  
+                        <tr>
+                            <td>桜美林</td><td>.532</td><td>80</td><td>70</td><td>50</td><td>40</td><td>40</td><td>100</td>
+                        </tr> 
+                        <tr>
+                            <td>日本</td><td>.668</td><td>60</td><td>80</td><td>50</td><td>40</td><td>40</td><td>7</td>
+                        </tr>                           
+                    </table>
+                </div>
+                <!--/team-result-->
+                
+                
+                <div class="team-map">
+                    <!--<div class="map-ttl">-->
+                    <!--    <span class="jpn">チームマッピング</span>-->
+                    <!--    <span class="eng">team maping</span>-->
+                    <!--</div>-->
+                    
+                     <div class="content-ttl">チームマッピンング</div>
+                        
+                     <div class="team-div">TOP8</div>
+                    <div id="chart_div"></div>
+                </div>
+                
+                
+                
+                <div class="game-result">
+                    <!--<div class="result-ttl">-->
+                    <!--    <span class="jpn">試合結果</span>-->
+                    <!--    <span class="eng">match result</span>-->
+                    <!--</div>-->
+                    
+                    <!--12月の試合結果-->
+                    <section class="december">
+                        <div class="month-result-ttl">
+                             <span class="jpn">12月の試合結果</span>
+                        </div>
+                        
+                        <!--日本大学 vs 桜美林大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/48-27.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">桜美林</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--11月の試合試合結果-->
+                    <section class="November">
+                        <div class="month-result-ttl">
+                             <span class="jpn">11月の試合結果</span>
+                        </div>
+                        
+                        
+                        <!--早稲田大学vs明治大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">早稲田</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/27-14.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">明治</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/11/24</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>15:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--法政大学vs立教大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">法政</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/17-14.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">立教</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/11/24</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--日本体育大学vs東京大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本体育</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/3-16.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東京</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--桜美林大学vs東海大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">桜美林</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/3-16.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東海</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--日本大学vs横浜国立大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/3-16.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">横浜国立</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--駒沢大学vs青山学院大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">駒沢</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/30-0.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">青山学院</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--明治大学vs立教大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">明治</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/17-13.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">立教</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--早稲田大学vs法政大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">早稲田</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/35-28.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">法政</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+            
+                        <!--中央大学vs東京大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">中央</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/27-10.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東京</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!--国士舘大学vs青山学院大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">国士舘</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/17-18.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">青山学院</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>            
+ 
+ 
+                        <!--桜美林大学vs横浜国立大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">桜美林</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/38-20.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">横浜国立</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>            
+                    
+                        <!--日本大学vs東海大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/49-13.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東海</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <!--駒沢大学vs神奈川大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">駒沢</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/35-28.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">神奈川</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>   
+                        
+                        
+                    </section>
+                        
+                    
+                    <!--10月の試合試合結果-->
+                    <section class="October">
+                        <div class="month-result-ttl">
+                             <span class="jpn">10月の試合結果</span>
+                        </div>
+                        
+                        
+                        <!--早稲田vs立教大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">早稲田</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/44-20.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">立教</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!--明治vs法政大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">明治</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/10-7.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">法政</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--中央vs日本体育大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">中央</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/43-12.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本体育</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <!--立教vs東京大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">立教</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/21-14.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東京</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜ス���ジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--桜美林vs駒沢大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">桜美林</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/27-20.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">駒沢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--日本vs国士舘大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/35-10.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">国士舘</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--横浜国立vs神奈川大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">横浜国立</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/35-33.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">神奈川</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--東海vs大宇山学院大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東海</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/14-9.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">青山学院</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        
+                        <!--明治vs中央大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">明治</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/8-10.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">中央</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--法政vs日本体育大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">法政</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/26-9.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本体育</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--日本vs駒沢大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/48-10.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">駒沢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <!--横浜国立vs青山学院大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">横浜国立</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/31-7.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">青山学院</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>     
+                        
+                        <!--桜美林vs国士舘大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">桜美林</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/31-7.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">国士舘</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                   
+                        <!--東海vs神奈川大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東海</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/13-27.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">神奈川</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                   
+                       
+                        <!--法政vs東京大学-->
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">法政</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/24-21.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">東京</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                       
+                    </section>
+
+                    <!--9月の試合試合結果-->
+                    <section class="September">
+                        <div class="month-result-ttl">
+                             <span class="jpn">9月の試合結果</span>
+                        </div>
+                        <div class="result-box">
+                            <div class="half colleage">
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">日本</a>    
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <img class="result" src="./img/48-27.png" alt="">
+                                </div>
+                                <div class="first">
+                                    <div class="enb"></div>
+                                    <div class="name">
+                                        <a href="#">桜美林</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="row-one">
+                                    <div class="date">
+                                        <div class="third-tab">日付</div>
+                                        <span>2019/12/01</span>
+                                    </div>
+                                    <div class="kick-time">
+                                        <div class="third-tab">KO時間</div>
+                                        <span>13:00</span>                                        
+                                    </div>
+                                </div>
+                                <div class="row-two">
+                                    <div class="stadium">
+                                        <div class="third-tab">スタジアム</div>
+                                        <span>横浜スタジアム</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+            <!--main-content-->
+            <footer id="footer">
+                <div class="footer-inner">
+                    <ul class="footer-gnav">
+                        <li>HOME</li>
+                        <li>日程・結果</li>
+                        <li>順位表</li>
+                        <li>データ</li>
+                    </ul>
+                    <ul class="footer-sns">
+                        <li class="instagram">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>                            
+                    </ul>
+                </div>
+                <p class="copyright">&copy; AKINOBU KOIZUMI,ALL RIGHT RESERVED</p>
+            </footer>
+        </div>
+        <script src="./js/main.js"></script>
+        <script src="./js/slide-menu.js"></script>
+    </body>
+</html>

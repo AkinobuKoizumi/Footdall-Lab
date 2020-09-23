@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: 'Vardana',Sans-serif;
+}
+
+
+.sp {
+    display: block !important;
+}
+.pc {
+    display: none !important;
+}
+
+
+
+.main-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*順位表*/
+/*--------------------*/
+
+.ranking-table {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.rank-ttl {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.rank-ttl .jpn {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.rank-ttl .eng {
+    font-size: 10px;
+    display: block;
+}
+
+.win-content{
+  font-size: 13px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.win-content .win-content-ttl {
+    background: #222327;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+}
+.win-content .team-div {
+    background-color: #4682b4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 15px;
+}
+.win-content .rank-info{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.win-content .rank-info tr {
+    border-bottom: 1px solid #ccc;
+}
+.win-content .rank-info tr a {
+    cursor: pointer;
+}
+
+
+.win-content .rank-info th,
+.win-content .rank-info td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.win-content .rank-info td:first-child {
+    float: left;
+    padding-left: 30px;
+}
+.win-content .rank-info td:not( :first-child) {
+    font-weight: bold;
+}
+
+
+.win-content .rank-info tr:first-child {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+}
+.win-content .rank-info tr:not( :first-child):hover {
+    background-color: #f8fdff;
+    cursor: pointer;
+} 
+
+
+
+.win-content .enb {
+    display: inline-block;
+}
+.win-content .name {
+    display: inline-block;
+    padding-left: 10px;
+}
+.win-content .name a {
+    color: #000;
+}
+.win-content .rank-info .enb img {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+
+/*.rank-content {*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*    border: 4.5px solid #d5d5d5;*/
+/*    padding: 10px;*/
+/*}*/
+/*.rank {*/
+/*    padding: 0 5px;*/
+/*}*/
+/*.rank li {*/
+/*    width: 100%;*/
+/*    margin-bottom: 6px;*/
+/*    border-bottom: 1px solid #ccc;*/
+/*    padding-bottom: 3px;*/
+/*}*/
+/*.rank li .num {*/
+/*    display: inline-block;*/
+/*    font-size: 23px;*/
+/*    color: #1e1e1e;*/
+/*    color: #565656;*/
+/*    padding-left: 10px;*/
+/*}*/
+/*.rank li .enb {*/
+/*    display: inline-block;*/
+/*    padding-left: 10px;*/
+/*}*/
+/*.rank li .name {*/
+/*    display: inline-block;*/
+/*    letter-spacing: 0.9px;*/
+/*    padding-left: 20px;*/
+/*}*/
+/*.rank li .name a {*/
+/*    color: #565656;*/
+/*}*/
+/*.rank li .name a:hover {*/
+/*    opacity: 0.8;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.rank .rank-container {*/
+/*    text-align: center;*/
+/*    display: inline-block;*/
+/*    line-height: 30px;*/
+/*}*/
+/*.enb img {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    border-radius: 3px;*/
+/*}*/
+
+
+
+/*team-result*/
+/*----------------*/
+
+.team-result {
+    margin-bottom: 50px;
+}
+
+.team-result .content-ttl {
+    background: #222327;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+}
+.team-result .team-div {
+    background-color: #4682b4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 15px;
+}
+.go-team-result {
+    display: block;
+}
+.go-team-result .result-left {
+    display: inline-block;
+    width: 50%;
+}
+.go-team-result .result-right {
+    display: inline-block;
+    width: 50%;
+} 
+
+
+/*table*/
+/*最新情報（result-ana）*/
+/*------------------------*/
+.result-ana {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 13px;
+}
+.result-ana tr {
+    border-bottom: 1px solid #ccc;
+}
+.result-ana tr a {
+    cursor: pointer;
+}
+.result-ana th,
+.result-ana td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.result-ana tr:first-child {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+}
+
+
+
+
+/*team-map*/
+/*---------------------*/
+
+.team-map {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.map-ttl {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.map-ttl .jpn {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.map-ttl .eng {
+    font-size: 10px;
+    display: block;
+}
+
+.team-map .content-ttl {
+    background: #222327;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+}
+.team-map .team-div {
+    background-color: #4682b4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 15px;
+}
+
+#chart_div {
+    box-sizing: border-box;
+    border: 3.5px solid #d5d5d5;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/*game-result*/
+/*--------------------*/
+
+
+.game-result {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.game-result:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.game-result .december {
+    background-color: #fff;
+    border: 3.5px solid #d5d5d5;
+    border-radius: 3px; 
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+} 
+.month-result-ttl {
+    background-color: #222327;
+    color: #ccc;
+    padding: 4px 0 4px 4px;
+}
+.colleage {
+    display: flex;
+    justify-content: space-between;
+}
+.first {
+    width: 20%;
+}
+.second {
+    width: 50%;
+}
+/*.first .name {*/
+/*    width: 30%;*/
+/*}*/
+.first .name a {
+    font-size: 12px;
+    color: #282828;
+}
+.second img {
+    width: 100%;
+    height: auto;
+}
+
+.result-ttl .jpn {
+    font-size: 20px;
+}
+
+
+.result-ttl {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.result-ttl .jpn {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.result-ttl .eng {
+    font-size: 10px;
+    display: block;
+}
+.result-box {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.half {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+}
+.third-tab {
+    background-color: #6c6c6c;
+    color: #fff;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+.stadium .third-tab {
+    margin-bottom: 0;
+}
+.row-one .date {
+    display: block;
+}
+.row-one .kick-time {
+    display: block;
+}
+.game-result .November {
+    background-color: #fff;
+    border: 3.5px solid #d5d5d5;
+    border-radius: 3px; 
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+} 
+.game-result .October {
+    background-color: #fff;
+    border: 3.5px solid #d5d5d5;
+    border-radius: 3px; 
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+} 
+.game-result .September {
+    background-color: #fff;
+    border: 3.5px solid #d5d5d5;
+    border-radius: 3px; 
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+} 

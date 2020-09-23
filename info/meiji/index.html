@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../../css/common.css">
+        <link rel="stylesheet" href="../../css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js" integrity="sha512-BmoWLYENsSaAfQfHszJM7cLiy9Ml4I0n1YtBQKfx8PaYpZ3SoTXfj3YiDNn0GAdveOCNbK8WqQQYaSb0CMjTHQ==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" integrity="sha512-c7jR/kCnu09ZrAKsWXsI/x9HCO9kkpHw4Ftqhofqs+I2hNxalK5RGwo/IAhW3iqCHIw55wBSSCFlm8JP0sw2Zw==" crossorigin="anonymous" />   
+        <title>American Football Data Site</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <header id="header">
+                <div class="header-inner">
+                    <div class="logo-img">
+                        <a href="#">
+                            <img class="pc" src="../../img/KCFDA-icon.png">
+                            <img class="sp" src="../../img/KCFDA-icon.png">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="slide-menu sp">
+                            <div class="slide-menu-btn">
+                                <a href="#" class="slide-trigger">
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide-menu-contents">
+                            <ul class="menu-list">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#">日程・結果</a>
+                                </li>
+                                <li>
+                                    <a href="#">順位表</a>
+                                </li>
+                                <li>
+                                    <a href="#">データ</a>
+                                </li>    
+                            </ul>
+                        </div>
+                        <ul class="header-nav-pc pc">
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">日程・結果</a>
+                            </li>
+                            <li>
+                                <a href="#">順位表</a>
+                            </li>
+                            <li>
+                                <a href="#">データ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="main-content">
+
+                <section>
+                    <div class="main-area">
+                        
+                        <div class="team-name">
+                            <div class="team-logo">
+                                <img src="../../img/meiji-icon.png">
+                            </div>
+                            <div class="team-info-ttl">
+                                <span class="small">明治大学</span>
+                                <span class="large">GRIFFINS</span>
+                            </div>
+                        </div>                       
+            
+                        
+                        <div class="tab">
+                            <p class="tab-menu is-active">最新情報</p>
+                            <p class="tab-menu">日程・結果</p>
+                            <p class="tab-menu">成績・データ</p>
+                            <p class="tab-menu">プロフィール</p>
+                        </div>
+                        <div class="content-box is-active">
+                            <div class="content">
+                                <h2>直近3試合の結果</h2>
+                                
+                                <table class="status-info">
+                                    
+                                    <tr>
+                                        <th>年月日</th><th>対戦相手</th><th>スタジアム</th><th>勝敗</th><th>スコア</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2019/11/24(日)</td><td><a href="#">早稲田</a></td><td>横浜</td><td>負け</td><td>27 - 14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019/11/10(日)</td><td><a href="#">立教</a></td><td>横浜</td><td>勝ち</td><td>17 - 13</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>2019/10/27(日)</td><td><a href="#">法政</a></td><td>AGF</td><td>勝ち</td><td>10 - 7</td>
+                                    </tr>                                
+                                </table>
+                                
+                                <div class="team-list-btn">
+                                    <a href="#">
+                                        <div class="go-back">チーム一覧に戻る</div>
+                                        <div class="go-back-icon">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <p class="content">タブ2の中身です</p>
+                        </div>
+                        <div class="content-box">
+                            <div class="content">
+                                <h2>成績</h2>
+                                
+                                <table class="data-info">
+                                    
+                                    <tr>
+                                        <th>試合数</th><th>勝</th><th>敗</th><th>勝率</th><th>得点</th><th>失点</th>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td><td>5</td><td>6</td><td>20%</td><td>25</td><td>31</td>
+                                    </tr>
+                                </table>
+                                
+                                <div class="team-list-btn">
+                                    <a href="#">
+                                        <div class="go-back">チーム一覧に戻る</div>
+                                        <div class="go-back-icon">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content">
+                                <table class="profile-info">
+                                    <tr>
+                                        <th>設立年</th>
+                                        <td>1934年</td>
+                                    </tr>
+                                    <tr>
+                                        <th>大学名/チーム名</th>
+                                        <td>明治大学/GRIFFINS</td>
+                                    </tr>
+                                    <tr>
+                                        <th>グランド所在地</th>
+                                        <td>
+                                            <span>〒156-0056</span>
+                                            <span>東京都世田谷区八幡山2丁目17-41</span>
+                                            <span>TEL：042-581-1540</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>チーム名の由来</th>
+                                        <td>ギリシャ神話に登場する鷲の頭と獅子の胴体に翼を持つ伝説上の怪獣のこと。アポロの聖獣と考えられた。</td>
+                                    </tr>
+                                    <tr>
+                                        <th>チーム紹介</th>
+                                        <td>1934年12月に立教大学と共に誕生した日本フットボール界のルーツ校の一つ。米国日系二世のドロー武田コーチ指導下、戦前９季で5度優勝。甲子園ボウル設立以前の王者に相応しい戦績だった。花岡惇監督時代（39年卒・47～61年）は、米最新戦術がチーム作りの根幹を成し、野崎和夫監督（55年卒・62～99年＝現総監督）以降は、「合理性」の伝統にマルチブル攻撃が続々と登場。一見派手な戦術も、基礎技術の反復練習によって鍛え上げられたスピードと技に支えられていた。そのスタイルは、現在も受け継がれている</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                        </div>                    
+                    </div>
+                </section>
+
+
+            </div>
+            <!--main-content-->
+            <footer id="footer">
+                <div class="footer-inner">
+                    <ul class="footer-gnav">
+                        <li>HOME</li>
+                        <li>日程・結果</li>
+                        <li>順位表</li>
+                        <li>データ</li>
+                    </ul>
+                    <ul class="footer-sns">
+                        <li class="instagram">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>                            
+                    </ul>
+                </div>
+                <p class="copyright">&copy; AKINOBU KOIZUMI,ALL RIGHT RESERVED</p>
+            </footer>
+        </div>
+        <script src="./js/main.js"></script>
+        <script src="../js/tab.js"></script>
+        <script src="../../js/slide-menu.js"></script>
+    </body>
+</html>
